@@ -1,0 +1,32 @@
+
+.game
+    background-color: #c2c0b8
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    &__wrapper
+        position: relative
+        width: 90%
+        height: 50%
+        border: 1px solid #000
+        overflow: hidden
+        background-color: #d9eeca
+    &__character
+        width: 50px
+        height: 100px
+        position: absolute
+        bottom: 0
+        left: 5%
+        background-color: red
+        &--active
+            bottom: 100px
+    &__block
+        width: 50px
+        height: 50px
+        background-color: green
+        position: absolute
+        bottom: 0
+        right: 0
+        animation: right-to-left 3s linear infinite
